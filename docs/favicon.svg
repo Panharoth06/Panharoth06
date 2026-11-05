@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg { fill: #E7E4DC; }
+    .mark { fill: #12161B; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #12161B; }
+      .mark { fill: #E7E4DC; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32"/>
+  <rect class="mark" x="13.5" y="13.5" width="5" height="5" transform="rotate(45 16 16)"/>
+  <rect x="24" y="5" width="3" height="3" fill="#B23A2E"/>
+</svg>

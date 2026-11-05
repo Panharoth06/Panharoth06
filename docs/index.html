@@ -1,0 +1,1113 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panharath Chheng — Field Report 001</title>
+    <meta
+      name="description"
+      content="Panharath Chheng is a full-stack engineer in Phnom Penh who builds platforms and then tests their edges. Selected work: raiwall, document verification, CodeCompass."
+    />
+    <meta name="author" content="Panharath Chheng" />
+    <meta name="theme-color" content="#E7E4DC" />
+    <link rel="canonical" href="https://panharoth06.github.io/Panharoth06/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Panharath Chheng — Field Report 001" />
+    <meta
+      property="og:description"
+      content="Full-stack engineer, security-minded. An interactive field plate: pointer readout, project nodes, and three selected works."
+    />
+    <meta property="og:url" content="https://panharoth06.github.io/Panharoth06/" />
+    <meta property="og:image" content="https://panharoth06.github.io/Panharoth06/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Field Report 001 — Panharath Chheng, full-stack engineer, security-minded."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Panharath Chheng — Field Report 001" />
+    <meta
+      name="twitter:description"
+      content="Full-stack engineer, security-minded. An interactive field plate: pointer readout, project nodes, and three selected works."
+    />
+    <meta name="twitter:image" content="https://panharoth06.github.io/Panharoth06/og.png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="fonts/gloock-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/ibm-plex-mono-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/instrument-sans-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      (function () {
+        var root = document.documentElement;
+        root.classList.add("js");
+        var saved = null;
+        try {
+          saved = localStorage.getItem("field-report-theme");
+        } catch (e) {}
+        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved === "dark" || saved === "light" ? saved : dark ? "dark" : "light";
+        root.dataset.theme = theme;
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute("content", theme === "dark" ? "#12161B" : "#E7E4DC");
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#work">Skip to selected work</a>
+
+    <div class="pings" id="pings" aria-hidden="true"></div>
+    <div class="frame" aria-hidden="true"></div>
+    <span class="corner corner--tl" aria-hidden="true"></span>
+    <span class="corner corner--tr" aria-hidden="true"></span>
+    <span class="corner corner--bl" aria-hidden="true"></span>
+    <span class="corner corner--br" aria-hidden="true"></span>
+
+    <div class="plate" id="plate">
+      <div class="grid" aria-hidden="true"></div>
+
+      <header class="rail rail--top">
+        <p class="eyebrow"><span class="chip" aria-hidden="true"></span>Field notes / 001</p>
+        <p class="coords">11.5564° N&nbsp;&nbsp;104.9282° E<br />Phnom Penh, Cambodia</p>
+      </header>
+
+      <main class="page-main">
+        <div class="masthead">
+          <div class="identity">
+            <h1><span>Panharath</span><span>Chheng</span></h1>
+            <div class="rule" aria-hidden="true"></div>
+            <p class="role">
+              <span class="role-part">Full-stack engineer</span><span class="sep" aria-hidden="true">·</span
+              ><span class="role-part">Security-minded</span>
+            </p>
+            <p class="thesis">I build full-stack platforms and then try to break them.</p>
+          </div>
+
+          <div class="instrument">
+            <div class="aperture">
+              <svg class="aperture-svg" viewBox="0 0 440 440" aria-hidden="true" focusable="false">
+                <g class="inst-axis">
+                  <line x1="16" y1="220" x2="424" y2="220" />
+                  <line x1="220" y1="16" x2="220" y2="424" />
+                </g>
+
+                <g class="inst-outer">
+                  <circle class="inst-dash" cx="220" cy="220" r="204" />
+                  <g class="inst-ticks">
+                    <line
+                      class="inst-tick"
+                      x1="410.0"
+                      y1="220.0"
+                      x2="422.0"
+                      y2="220.0"
+                      style="--i: 0; --o: 0.34"
+                      stroke-width="1.1"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="409.3"
+                      y1="236.6"
+                      x2="417.7"
+                      y2="237.3"
+                      style="--i: 1; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="407.1"
+                      y1="253.0"
+                      x2="415.5"
+                      y2="254.5"
+                      style="--i: 2; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="403.5"
+                      y1="269.2"
+                      x2="411.7"
+                      y2="271.4"
+                      style="--i: 3; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="398.5"
+                      y1="285.0"
+                      x2="406.5"
+                      y2="287.9"
+                      style="--i: 4; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="392.2"
+                      y1="300.3"
+                      x2="399.9"
+                      y2="303.9"
+                      style="--i: 5; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="384.5"
+                      y1="315.0"
+                      x2="391.9"
+                      y2="319.2"
+                      style="--i: 6; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="375.6"
+                      y1="329.0"
+                      x2="382.6"
+                      y2="333.9"
+                      style="--i: 7; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="365.5"
+                      y1="342.1"
+                      x2="372.1"
+                      y2="347.6"
+                      style="--i: 8; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="354.4"
+                      y1="354.4"
+                      x2="360.4"
+                      y2="360.4"
+                      style="--i: 9; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="342.1"
+                      y1="365.5"
+                      x2="347.6"
+                      y2="372.1"
+                      style="--i: 10; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="329.0"
+                      y1="375.6"
+                      x2="333.9"
+                      y2="382.6"
+                      style="--i: 11; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="315.0"
+                      y1="384.5"
+                      x2="319.2"
+                      y2="391.9"
+                      style="--i: 12; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="300.3"
+                      y1="392.2"
+                      x2="303.9"
+                      y2="399.9"
+                      style="--i: 13; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="285.0"
+                      y1="398.5"
+                      x2="287.9"
+                      y2="406.5"
+                      style="--i: 14; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="269.2"
+                      y1="403.5"
+                      x2="271.4"
+                      y2="411.7"
+                      style="--i: 15; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="253.0"
+                      y1="407.1"
+                      x2="254.5"
+                      y2="415.5"
+                      style="--i: 16; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="236.6"
+                      y1="409.3"
+                      x2="237.3"
+                      y2="417.7"
+                      style="--i: 17; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="220.0"
+                      y1="410.0"
+                      x2="220.0"
+                      y2="422.0"
+                      style="--i: 18; --o: 0.34"
+                      stroke-width="1.1"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="203.4"
+                      y1="409.3"
+                      x2="202.7"
+                      y2="417.7"
+                      style="--i: 19; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="187.0"
+                      y1="407.1"
+                      x2="185.5"
+                      y2="415.5"
+                      style="--i: 20; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="170.8"
+                      y1="403.5"
+                      x2="168.6"
+                      y2="411.7"
+                      style="--i: 21; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="155.0"
+                      y1="398.5"
+                      x2="152.1"
+                      y2="406.5"
+                      style="--i: 22; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="139.7"
+                      y1="392.2"
+                      x2="136.1"
+                      y2="399.9"
+                      style="--i: 23; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="125.0"
+                      y1="384.5"
+                      x2="120.8"
+                      y2="391.9"
+                      style="--i: 24; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="111.0"
+                      y1="375.6"
+                      x2="106.1"
+                      y2="382.6"
+                      style="--i: 25; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="97.9"
+                      y1="365.5"
+                      x2="92.4"
+                      y2="372.1"
+                      style="--i: 26; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="85.6"
+                      y1="354.4"
+                      x2="79.6"
+                      y2="360.4"
+                      style="--i: 27; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="74.5"
+                      y1="342.1"
+                      x2="67.9"
+                      y2="347.6"
+                      style="--i: 28; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="64.4"
+                      y1="329.0"
+                      x2="57.4"
+                      y2="333.9"
+                      style="--i: 29; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="55.5"
+                      y1="315.0"
+                      x2="48.1"
+                      y2="319.2"
+                      style="--i: 30; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="47.8"
+                      y1="300.3"
+                      x2="40.1"
+                      y2="303.9"
+                      style="--i: 31; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="41.5"
+                      y1="285.0"
+                      x2="33.5"
+                      y2="287.9"
+                      style="--i: 32; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="36.5"
+                      y1="269.2"
+                      x2="28.3"
+                      y2="271.4"
+                      style="--i: 33; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="32.9"
+                      y1="253.0"
+                      x2="24.5"
+                      y2="254.5"
+                      style="--i: 34; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="30.7"
+                      y1="236.6"
+                      x2="22.3"
+                      y2="237.3"
+                      style="--i: 35; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="30.0"
+                      y1="220.0"
+                      x2="18.0"
+                      y2="220.0"
+                      style="--i: 36; --o: 0.34"
+                      stroke-width="1.1"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="30.7"
+                      y1="203.4"
+                      x2="22.3"
+                      y2="202.7"
+                      style="--i: 37; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="32.9"
+                      y1="187.0"
+                      x2="24.5"
+                      y2="185.5"
+                      style="--i: 38; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="36.5"
+                      y1="170.8"
+                      x2="28.3"
+                      y2="168.6"
+                      style="--i: 39; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="41.5"
+                      y1="155.0"
+                      x2="33.5"
+                      y2="152.1"
+                      style="--i: 40; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="47.8"
+                      y1="139.7"
+                      x2="40.1"
+                      y2="136.1"
+                      style="--i: 41; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="55.5"
+                      y1="125.0"
+                      x2="48.1"
+                      y2="120.7"
+                      style="--i: 42; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="64.4"
+                      y1="111.0"
+                      x2="57.4"
+                      y2="106.1"
+                      style="--i: 43; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="74.5"
+                      y1="97.9"
+                      x2="67.9"
+                      y2="92.4"
+                      style="--i: 44; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="85.6"
+                      y1="85.6"
+                      x2="79.6"
+                      y2="79.6"
+                      style="--i: 45; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="97.9"
+                      y1="74.5"
+                      x2="92.4"
+                      y2="67.9"
+                      style="--i: 46; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="111.0"
+                      y1="64.4"
+                      x2="106.1"
+                      y2="57.4"
+                      style="--i: 47; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="125.0"
+                      y1="55.5"
+                      x2="120.7"
+                      y2="48.1"
+                      style="--i: 48; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="139.7"
+                      y1="47.8"
+                      x2="136.1"
+                      y2="40.1"
+                      style="--i: 49; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="155.0"
+                      y1="41.5"
+                      x2="152.1"
+                      y2="33.5"
+                      style="--i: 50; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="170.8"
+                      y1="36.5"
+                      x2="168.6"
+                      y2="28.3"
+                      style="--i: 51; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="187.0"
+                      y1="32.9"
+                      x2="185.5"
+                      y2="24.5"
+                      style="--i: 52; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="203.4"
+                      y1="30.7"
+                      x2="202.7"
+                      y2="22.3"
+                      style="--i: 53; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="220.0"
+                      y1="30.0"
+                      x2="220.0"
+                      y2="18.0"
+                      style="--i: 54; --o: 0.34"
+                      stroke-width="1.1"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="236.6"
+                      y1="30.7"
+                      x2="237.3"
+                      y2="22.3"
+                      style="--i: 55; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="253.0"
+                      y1="32.9"
+                      x2="254.5"
+                      y2="24.5"
+                      style="--i: 56; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="269.2"
+                      y1="36.5"
+                      x2="271.4"
+                      y2="28.3"
+                      style="--i: 57; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="285.0"
+                      y1="41.5"
+                      x2="287.9"
+                      y2="33.5"
+                      style="--i: 58; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="300.3"
+                      y1="47.8"
+                      x2="303.9"
+                      y2="40.1"
+                      style="--i: 59; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="315.0"
+                      y1="55.5"
+                      x2="319.2"
+                      y2="48.1"
+                      style="--i: 60; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="329.0"
+                      y1="64.4"
+                      x2="333.9"
+                      y2="57.4"
+                      style="--i: 61; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="342.1"
+                      y1="74.5"
+                      x2="347.6"
+                      y2="67.9"
+                      style="--i: 62; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="354.4"
+                      y1="85.6"
+                      x2="360.4"
+                      y2="79.6"
+                      style="--i: 63; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="365.5"
+                      y1="97.9"
+                      x2="372.1"
+                      y2="92.4"
+                      style="--i: 64; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="375.6"
+                      y1="111.0"
+                      x2="382.6"
+                      y2="106.1"
+                      style="--i: 65; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="384.5"
+                      y1="125.0"
+                      x2="391.9"
+                      y2="120.7"
+                      style="--i: 66; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="392.2"
+                      y1="139.7"
+                      x2="399.9"
+                      y2="136.1"
+                      style="--i: 67; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="398.5"
+                      y1="155.0"
+                      x2="406.5"
+                      y2="152.1"
+                      style="--i: 68; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="403.5"
+                      y1="170.8"
+                      x2="411.7"
+                      y2="168.6"
+                      style="--i: 69; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="407.1"
+                      y1="187.0"
+                      x2="415.5"
+                      y2="185.5"
+                      style="--i: 70; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                    <line
+                      class="inst-tick"
+                      x1="409.3"
+                      y1="203.4"
+                      x2="417.7"
+                      y2="202.7"
+                      style="--i: 71; --o: 0.16"
+                      stroke-width="0.7"
+                    />
+                  </g>
+                </g>
+
+                <g class="inst-rings">
+                  <circle class="inst-ring" cx="220" cy="220" r="42" pathLength="1" style="--o: 0.34; --d: 0.55s" />
+                  <circle class="inst-ring" cx="220" cy="220" r="78" pathLength="1" style="--o: 0.28; --d: 0.63s" />
+                  <circle class="inst-ring" cx="220" cy="220" r="114" pathLength="1" style="--o: 0.23; --d: 0.71s" />
+                  <circle class="inst-ring" cx="220" cy="220" r="150" pathLength="1" style="--o: 0.18; --d: 0.79s" />
+                  <circle class="inst-ring" cx="220" cy="220" r="186" pathLength="1" style="--o: 0.14; --d: 0.87s" />
+                </g>
+
+                <g class="inst-center">
+                  <rect x="216.4" y="216.4" width="7.2" height="7.2" transform="rotate(45 220 220)" />
+                  <circle cx="220" cy="220" r="0.9" />
+                </g>
+
+                <g class="inst-reticle" id="reticle">
+                  <line x1="-16" y1="0" x2="-6" y2="0" />
+                  <line x1="6" y1="0" x2="16" y2="0" />
+                  <line x1="0" y1="-16" x2="0" y2="-6" />
+                  <line x1="0" y1="6" x2="0" y2="16" />
+                  <circle cx="0" cy="0" r="7" />
+                  <circle class="reticle-dot" cx="0" cy="0" r="1.7" />
+                </g>
+              </svg>
+
+              <div class="nodes" role="group" aria-label="Project nodes">
+                <button
+                  class="node node--raiwall"
+                  type="button"
+                  data-project="raiwall"
+                  aria-pressed="true"
+                  aria-controls="details"
+                  aria-label="raiwall"
+                >
+                  <span class="node-tag" aria-hidden="true">raiwall</span>
+                </button>
+                <button
+                  class="node node--document"
+                  type="button"
+                  data-project="document-verification-backend"
+                  aria-pressed="false"
+                  aria-controls="details"
+                  aria-label="Document verification"
+                >
+                  <span class="node-tag" aria-hidden="true">document verification</span>
+                </button>
+                <button
+                  class="node node--compass"
+                  type="button"
+                  data-project="code-compass-backend"
+                  aria-pressed="false"
+                  aria-controls="details"
+                  aria-label="CodeCompass"
+                >
+                  <span class="node-tag" aria-hidden="true">CodeCompass</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="readout" aria-hidden="true">
+              <p class="readout-label" id="fix-label">Pointer fix</p>
+              <dl class="readout-values">
+                <div>
+                  <dt>X</dt>
+                  <dd id="rd-x">----</dd>
+                </div>
+                <div>
+                  <dt>Y</dt>
+                  <dd id="rd-y">----</dd>
+                </div>
+                <div>
+                  <dt>R</dt>
+                  <dd id="rd-r">0.000</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <section class="work" id="work" aria-labelledby="work-title">
+          <div class="section-head">
+            <h2 id="work-title">Selected work</h2>
+            <p class="section-meta">03 entries / public repositories</p>
+          </div>
+
+          <div class="work-body">
+            <ol class="entries">
+              <li>
+                <button class="entry" type="button" data-project="raiwall" aria-pressed="true" aria-controls="details">
+                  <span class="entry-no">01</span>
+                  <span class="entry-main">
+                    <span class="entry-name">raiwall</span>
+                    <span class="entry-note">Self-hosted WAF and reverse proxy</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="entry"
+                  type="button"
+                  data-project="document-verification-backend"
+                  aria-pressed="false"
+                  aria-controls="details"
+                >
+                  <span class="entry-no">02</span>
+                  <span class="entry-main">
+                    <span class="entry-name">Document verification</span>
+                    <span class="entry-note">Tamper-evident certificate issuance</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="entry"
+                  type="button"
+                  data-project="code-compass-backend"
+                  aria-pressed="false"
+                  aria-controls="details"
+                >
+                  <span class="entry-no">03</span>
+                  <span class="entry-main">
+                    <span class="entry-name">CodeCompass</span>
+                    <span class="entry-note">Algorithm practice, judged and ranked</span>
+                  </span>
+                </button>
+              </li>
+            </ol>
+
+            <div class="details" id="details">
+              <article class="detail is-active" data-project="raiwall" id="raiwall">
+                <p class="detail-kicker">Entry 01 / 03</p>
+                <h3>raiwall</h3>
+                <p class="detail-desc">
+                  Self-hosted web application firewall and reverse proxy, built as a Caddy module. OWASP CRS inspection,
+                  outbound DLP, rate limiting, and an embedded admin dashboard in one binary.
+                </p>
+                <dl class="specs">
+                  <div>
+                    <dt>Stack</dt>
+                    <dd>Go · Caddy · Vue</dd>
+                  </div>
+                  <div>
+                    <dt>Source</dt>
+                    <dd>
+                      <a href="https://github.com/Panharoth06/raiwall" target="_blank" rel="noopener noreferrer"
+                        ><span class="source-full">github.com/Panharoth06/raiwall</span
+                        ><span class="source-short">Open repository</span></a
+                      >
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+
+              <article class="detail" data-project="document-verification-backend" id="document-verification-backend">
+                <p class="detail-kicker">Entry 02 / 03</p>
+                <h3>Document verification</h3>
+                <p class="detail-desc">
+                  Tamper-evident certificate issuance and verification. Playwright renders the document; a SHA-256
+                  digest proves it hasn't changed since.
+                </p>
+                <dl class="specs">
+                  <div>
+                    <dt>Stack</dt>
+                    <dd>Java 21 · Spring Boot · PostgreSQL · Playwright</dd>
+                  </div>
+                  <div>
+                    <dt>Source</dt>
+                    <dd>
+                      <a
+                        href="https://github.com/Panharoth06/document-verification-backend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><span class="source-full">github.com/Panharoth06/document-verification-backend</span
+                        ><span class="source-short">Open repository</span></a
+                      >
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+
+              <article class="detail" data-project="code-compass-backend" id="code-compass-backend">
+                <p class="detail-kicker">Entry 03 / 03</p>
+                <h3>CodeCompass</h3>
+                <p class="detail-desc">
+                  Algorithm-practice platform with automated judging, packages, badges, and leaderboards. Built by a
+                  small team I led.
+                </p>
+                <dl class="specs">
+                  <div>
+                    <dt>Stack</dt>
+                    <dd>Spring Boot · Next.js · PostgreSQL</dd>
+                  </div>
+                  <div>
+                    <dt>Source</dt>
+                    <dd>
+                      <a
+                        href="https://github.com/Panharoth06/code-compass-backend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><span class="source-full">github.com/Panharoth06/code-compass-backend</span
+                        ><span class="source-short">Open repository</span></a
+                      >
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="stack" id="stack" aria-labelledby="stack-title">
+          <div class="section-head">
+            <h2 id="stack-title">Stack</h2>
+            <p class="section-meta">05 groups / current tools</p>
+          </div>
+
+          <div class="stack-body">
+            <div class="stack-group">
+              <h3>Backend</h3>
+              <ul class="tech-list">
+                <li class="tech">Java 21</li>
+                <li class="tech">Spring Boot</li>
+                <li class="tech">Spring Security</li>
+                <li class="tech">Spring Data JPA</li>
+                <li class="tech">Go</li>
+                <li class="tech">gRPC</li>
+                <li class="tech">REST</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3>Frontend</h3>
+              <ul class="tech-list">
+                <li class="tech">TypeScript</li>
+                <li class="tech">React</li>
+                <li class="tech">Next.js</li>
+                <li class="tech">Redux Toolkit</li>
+                <li class="tech">Tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3>Data</h3>
+              <ul class="tech-list">
+                <li class="tech">PostgreSQL</li>
+                <li class="tech">Redis</li>
+                <li class="tech">MongoDB</li>
+                <li class="tech">MinIO</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3>Infrastructure</h3>
+              <ul class="tech-list">
+                <li class="tech">Docker</li>
+                <li class="tech">Kubernetes</li>
+                <li class="tech">Jenkins</li>
+                <li class="tech">Nginx</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3>Security</h3>
+              <ul class="tech-list">
+                <li class="tech">OWASP Top 10</li>
+                <li class="tech">JWT / OAuth2</li>
+                <li class="tech">Keycloak</li>
+                <li class="tech">HashiCorp Vault</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="activity" id="activity" aria-labelledby="activity-title">
+          <div class="section-head">
+            <h2 id="activity-title">Field log</h2>
+            <p class="section-meta" id="activity-sync">Awaiting sync</p>
+          </div>
+
+          <div class="activity-body" id="activity-body" hidden>
+            <div class="activity-figures">
+              <div class="figure figure--lead">
+                <p class="figure-value" id="act-total">—</p>
+                <p class="figure-label">Contributions / last 12 months</p>
+              </div>
+              <div class="figure">
+                <p class="figure-value" id="act-streak">—</p>
+                <p class="figure-label">Current streak / days</p>
+              </div>
+              <div class="figure">
+                <p class="figure-value" id="act-repos">—</p>
+                <p class="figure-label">Public projects</p>
+              </div>
+              <div class="figure">
+                <p class="figure-value" id="act-stars">—</p>
+                <p class="figure-label">Stars</p>
+              </div>
+            </div>
+
+            <div class="activity-grid">
+              <div class="heatmap-block">
+                <div class="heatmap-head">
+                  <p class="heatmap-readout" id="heatmap-readout">Latest fix / —</p>
+                  <p class="heatmap-legend" aria-hidden="true">
+                    Less
+                    <span class="legend-swatches"><i></i><i></i><i></i><i></i><i></i></span>
+                    More
+                  </p>
+                </div>
+                <div class="heatmap-months" id="heatmap-months" aria-hidden="true"></div>
+                <div
+                  class="heatmap"
+                  id="heatmap"
+                  role="img"
+                  aria-label="Public GitHub contribution matrix for the last 12 months."
+                ></div>
+                <p class="heatmap-note">Public contributions / last 12 months</p>
+              </div>
+
+              <div class="activity-side">
+                <div class="languages-block">
+                  <h3>Languages / by project</h3>
+                  <div class="language-bar" id="language-bar" aria-hidden="true"></div>
+                  <ul class="language-list" id="language-list"></ul>
+                </div>
+
+                <div class="recent-block" id="recent-block">
+                  <h3>Recent activity</h3>
+                  <ol class="recent-list" id="recent-list"></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="activity-empty" id="activity-empty">No signal yet. The daily sync will populate this log.</p>
+        </section>
+
+        <p class="sr-only" id="selection-status" aria-live="polite"></p>
+      </main>
+
+      <footer class="rail rail--bottom">
+        <p class="footer-id"><span class="chip" aria-hidden="true"></span>Panharoth06 / 2026</p>
+        <div class="footer-links">
+          <a href="mailto:panharothchheng0903@gmail.com">panharothchheng0903@gmail.com</a>
+          <a href="https://github.com/Panharoth06" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+        <button class="theme" id="theme" type="button" aria-pressed="false">
+          <span class="theme-mark" aria-hidden="true"></span>
+          Theme <span class="theme-value" id="theme-value">Light</span>
+        </button>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Panharath Chheng",
+        "jobTitle": "Full-stack engineer",
+        "email": "panharothchheng0903@gmail.com",
+        "url": "https://panharoth06.github.io/Panharoth06/",
+        "sameAs": ["https://github.com/Panharoth06"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Phnom Penh",
+          "addressCountry": "KH"
+        }
+      }
+    </script>
+  </body>
+</html>

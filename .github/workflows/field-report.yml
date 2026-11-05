@@ -1,0 +1,56 @@
+name: Field report activity
+
+# Refreshes the README activity plate and the Pages data once a day.
+# If the default token cannot read your contribution calendar, add a
+# fine-grained PAT as FIELD_REPORT_TOKEN with read:user and public repo read.
+#
+# The workflow only commits the generated activity block and assets; it never
+# touches prose outside the markers.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: field-report-activity
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install type tooling
+        run: pip install --quiet uharfbuzz fonttools
+
+      - name: Build activity plate and site data
+        env:
+          GITHUB_TOKEN: ${{ secrets.FIELD_REPORT_TOKEN || github.token }}
+          GITHUB_LOGIN: Panharoth06
+        run: python assets/src/build-activity.py
+
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/activity-light.svg assets/activity-dark.svg docs/data/activity.json README.md
+          if git diff --cached --quiet; then
+            echo "Activity data unchanged."
+          else
+            git commit -m "chore: sync field report activity"
+            git push origin HEAD:master
+          fi

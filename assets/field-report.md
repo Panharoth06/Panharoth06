@@ -1,0 +1,16 @@
+# Field Report
+
+**A visual philosophy of evidence.**
+
+Field Report treats the page as an instrument of measurement rather than a surface for decoration. Space is surveyed, not filled: a strict underlying grid governs every mark, while generous margins act as silence around the evidence. Form is deliberately asymmetric — one monumental mass of type anchors the composition, and a single delicate diagram answers it from across the field. Nothing is centered, because centered things ask to be admired; things set on a margin ask to be read.
+
+Color is material, never atmosphere. Bone paper, ink, graphite, and one oxblood signal — the palette of a document that has been handled, stamped, and filed. The accent is rationed with the discipline of a printer's registration mark: a rule, a node, a single square. There are no gradients, no glows, no decorative color. Every hue must justify itself as information or as a mark of the hand that made the page. Where the eye expects ornament, it finds a hairline instead.
+
+Scale carries the argument. A name is set at architectural size, so large that its serifs become structure, while metadata is whispered at the threshold of legibility — coordinates, indices, tolerances, the small print of observation. The gap between the two scales is the entire emotional register of the work. Rhythm comes from that interval, repeated with variation: mass, breath, mark, breath. Type is chosen for its temperament, not its availability, and set with optical attention — the sidebearings adjusted, the rules aligned to the letters rather than to the box.
+
+Composition behaves like a specimen sheet from an imaginary discipline. Corner marks imply the plate was trimmed by hand. Concentric lines accumulate patiently, each one a measurement, until the pattern rewards sustained viewing. Labels sit where a surveyor would place them, never where a designer would. The page should feel discovered in an archive, catalogued by someone who cared about the difference between a millimetre and a mile. Information becomes artifact; the ephemeral is given the reverence of the observable. When data enters the plate, it enters as evidence: a stack index, a matrix of contributions, a measured bar of languages — never as decoration.
+
+This is the product of countless refinements. Every margin was re-measured, every line weight tested against the paper, every letter-space adjusted at magnification and then again at actual size. The final work must appear as though it passed through many hands and emerged with no fingerprints — meticulous, laboured over, the evidence of deep expertise rather than the appearance of it. Restraint is the hardest material to work in, and the only one that shows the hand of a master.
+
+Motion is evidence, not ornament. The plate arrives in one measured sequence — the grid surfaces, the name rises, the rule draws, the aperture closes — then settles into an orbit so slow it reads as breathing. Nothing pulses for attention, nothing loops at the speed of a notification. A visitor who asks for stillness is given stillness, fully and immediately. Every interval was tested at actual size, then again with the sequence removed, until the still plate stood on its own.
+

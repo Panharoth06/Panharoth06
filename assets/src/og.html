@@ -1,0 +1,134 @@
+<!doctype html>
+<!-- Source for docs/og.png. Serve the repo root, open
+     /assets/src/og.html at 1200x630, and screenshot to docs/og.png. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Gloock"; src: url("../../docs/fonts/gloock-regular.woff2") format("woff2"); }
+  @font-face { font-family: "Plex"; src: url("../../docs/fonts/ibm-plex-mono-regular.woff2") format("woff2"); }
+  @font-face { font-family: "Sans"; src: url("../../docs/fonts/instrument-sans-regular.woff2") format("woff2"); }
+  @font-face { font-family: "Sans"; src: url("../../docs/fonts/instrument-sans-bold.woff2") format("woff2"); font-weight: 600; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #E7E4DC; color: #12161B; font-family: "Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(18,22,27,.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(18,22,27,.055) 1px, transparent 1px);
+    background-size: 64px 64px; background-position: 64px 16px;
+  }
+  .reg { position: absolute; width: 14px; height: 14px; opacity: .55; }
+  .reg::before, .reg::after { content: ""; position: absolute; background: #5B626B; }
+  .reg::before { width: 14px; height: 1px; }
+  .reg::after { width: 1px; height: 14px; }
+  .tl { left: 28px; top: 28px; }
+  .tr { right: 28px; top: 28px; transform: scaleX(-1); }
+  .bl { left: 28px; bottom: 28px; transform: scaleY(-1); }
+  .br { right: 28px; bottom: 28px; transform: scale(-1); }
+  header {
+    position: absolute; left: 64px; right: 64px; top: 54px;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    font-family: "Plex", monospace; font-size: 11px; line-height: 1.7;
+    letter-spacing: .16em; text-transform: uppercase; color: #4C535C;
+  }
+  .eyebrow { display: flex; gap: 9px; align-items: center; }
+  .chip { width: 5px; height: 5px; background: #B23A2E; }
+  .coords { text-align: right; color: #5B626B; }
+  h1 {
+    position: absolute; left: 60px; top: 142px;
+    font-family: "Gloock", serif; font-weight: 400; font-size: 108px;
+    line-height: .9; letter-spacing: -.02em;
+  }
+  h1 span { display: block; }
+  .rule { position: absolute; left: 65px; top: 386px; width: 62px; height: 2px; background: #B23A2E; }
+  .role {
+    position: absolute; left: 64px; top: 411px;
+    font-family: "Plex", monospace; font-size: 12px; letter-spacing: .19em;
+    text-transform: uppercase; color: #12161B;
+  }
+  .role b { color: #B23A2E; font-weight: 400; padding: 0 .6em; }
+  .thesis {
+    position: absolute; left: 64px; top: 450px; max-width: 520px;
+    font-size: 16px; line-height: 1.55; color: #5B626B;
+  }
+  .aperture { position: absolute; left: 816px; top: 150px; width: 320px; height: 320px; }
+  .aperture svg { width: 100%; height: 100%; overflow: visible; }
+  footer {
+    position: absolute; left: 64px; right: 64px; bottom: 54px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    padding-top: 12px; border-top: 1px solid rgba(18,22,27,.18);
+    font-family: "Plex", monospace; font-size: 10px; line-height: 1.6;
+    letter-spacing: .15em; text-transform: uppercase; color: #4C535C;
+  }
+  footer .right { text-align: right; color: #5B626B; }
+  footer b { font-weight: 400; color: #B23A2E; }
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<span class="reg tl"></span><span class="reg tr"></span><span class="reg bl"></span><span class="reg br"></span>
+<header>
+  <p class="eyebrow"><span class="chip"></span>Field notes / 001</p>
+  <p class="coords">11.5564° N&nbsp;&nbsp;104.9282° E<br>Phnom Penh, Cambodia</p>
+</header>
+<h1><span>Panharath</span><span>Chheng</span></h1>
+<div class="rule"></div>
+<p class="role">Full-stack engineer<b>·</b>Security-minded</p>
+<p class="thesis">I build full-stack platforms and then try to break them.</p>
+
+<div class="aperture">
+  <svg viewBox="0 0 440 440" aria-hidden="true">
+    <g stroke="#12161B" stroke-width=".6" opacity=".10">
+      <line x1="16" y1="220" x2="424" y2="220"/>
+      <line x1="220" y1="16" x2="220" y2="424"/>
+    </g>
+    <g id="ticks" stroke="#12161B"></g>
+    <g fill="none" stroke="#12161B">
+      <circle cx="220" cy="220" r="42" opacity=".34"/>
+      <circle cx="220" cy="220" r="78" opacity=".28"/>
+      <circle cx="220" cy="220" r="114" opacity=".23"/>
+      <circle cx="220" cy="220" r="150" opacity=".18"/>
+      <circle cx="220" cy="220" r="186" opacity=".14"/>
+      <circle cx="220" cy="220" r="204" opacity=".30" stroke-dasharray="1 5.5"/>
+    </g>
+    <g fill="none" stroke="#12161B" opacity=".55">
+      <circle cx="145.4" cy="173.4" r="7" stroke="#B23A2E" opacity=".55"/>
+      <circle cx="205.6" cy="357.2" r="7"/>
+      <circle cx="275.4" cy="188" r="7"/>
+    </g>
+    <circle cx="145.4" cy="173.4" r="2.6" fill="#B23A2E"/>
+    <circle cx="205.6" cy="357.2" r="2.6" fill="#12161B" opacity=".55"/>
+    <circle cx="275.4" cy="188" r="2.6" fill="#12161B" opacity=".55"/>
+    <rect x="216.4" y="216.4" width="7.2" height="7.2" fill="#12161B" opacity=".75" transform="rotate(45 220 220)"/>
+  </svg>
+</div>
+
+<footer>
+  <p>Panharoth06 / 2026</p>
+  <p class="right">Selected work: raiwall <b>·</b> document verification <b>·</b> CodeCompass<br>panharoth06.github.io</p>
+</footer>
+
+<script>
+  const g = document.getElementById("ticks");
+  const cx = 220, cy = 220;
+  for (let i = 0; i < 72; i++) {
+    const a = (i * 5) * Math.PI / 180;
+    const major = i % 18 === 0;
+    const r1 = 190, r2 = major ? 202 : 198.5;
+    const l = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    l.setAttribute("x1", (cx + Math.cos(a) * r1).toFixed(1));
+    l.setAttribute("y1", (cy + Math.sin(a) * r1).toFixed(1));
+    l.setAttribute("x2", (cx + Math.cos(a) * r2).toFixed(1));
+    l.setAttribute("y2", (cy + Math.sin(a) * r2).toFixed(1));
+    l.setAttribute("stroke-width", major ? "1.1" : "0.7");
+    l.setAttribute("opacity", major ? "0.34" : "0.16");
+    g.appendChild(l);
+  }
+</script>
+</body>
+</html>
