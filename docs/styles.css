@@ -947,17 +947,30 @@ h1 span:nth-child(2) {
   color: var(--ink);
 }
 
-.tech::before {
-  content: "";
-  width: 3px;
-  height: 3px;
+.tech-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
   flex: none;
-  background: var(--rule);
-  transition: background-color 0.2s ease;
+  color: var(--ink);
+  fill: currentColor;
+  opacity: 0.78;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
-.tech:hover::before {
-  background: var(--accent);
+.tech:hover .tech-icon {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.stack-credit {
+  margin-top: 14px;
+  font-family: var(--mono);
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--quiet);
 }
 
 /* ---------- activity ---------- */
@@ -1553,6 +1566,11 @@ h1 span:nth-child(2) {
 
   .tech {
     font-size: 14.5px;
+  }
+
+  .tech-icon {
+    width: 13px;
+    height: 13px;
   }
 
   .activity-figures {

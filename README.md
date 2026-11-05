@@ -15,8 +15,8 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg?v=plates1">
-  <img src="assets/stack-light.svg?v=plates1" width="100%" alt="Stack, grouped by layer: backend Java 21, Spring Boot, Spring Security, Spring Data JPA, Go, gRPC, REST; frontend TypeScript, React, Next.js, Redux Toolkit, Tailwind CSS; data PostgreSQL, Redis, MongoDB, MinIO; infrastructure Docker, Kubernetes, Jenkins, Nginx; security OWASP Top 10, JWT, OAuth2, Keycloak, HashiCorp Vault.">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg?v=plates2">
+  <img src="assets/stack-light.svg?v=plates2" width="100%" alt="Stack, grouped by layer: backend Java 21, Spring Boot, Spring Security, Spring Data JPA, Go, gRPC, REST; frontend TypeScript, React, Next.js, Redux Toolkit, Tailwind CSS, Vue; data PostgreSQL, Redis, MongoDB, MinIO; infrastructure Docker, Kubernetes, Jenkins, Nginx, Caddy; security OWASP Top 10, JWT, OAuth2, Keycloak, HashiCorp Vault; testing Playwright.">
 </picture>
 
 <!-- activity:start -->
@@ -57,10 +57,13 @@ I build full-stack platforms and then try to break them. Java and Spring Boot on
 | Layer | Tools |
 | :--- | :--- |
 | **Backend** | `Java 21` `Spring Boot` `Spring Security` `Spring Data JPA` `Go` `gRPC` `REST` |
-| **Frontend** | `TypeScript` `React` `Next.js` `Redux Toolkit` `Tailwind CSS` |
+| **Frontend** | `TypeScript` `React` `Next.js` `Redux Toolkit` `Tailwind CSS` `Vue` |
 | **Data** | `PostgreSQL` `Redis` `MongoDB` `MinIO` |
-| **Infrastructure** | `Docker` `Kubernetes` `Jenkins` `Nginx` |
+| **Infrastructure** | `Docker` `Kubernetes` `Jenkins` `Nginx` `Caddy` |
 | **Security** | `OWASP Top 10` `JWT / OAuth2` `Keycloak` `HashiCorp Vault` |
+| **Testing** | `Playwright` |
+
+<sub>Technology marks: Simple Icons (CC0) and Devicon (MIT). Trademarks remain their owners'.</sub>
 
 ## Activity
 
@@ -72,4 +75,4 @@ Public activity, generated daily from the public GitHub API. [Raw data](docs/dat
 
 </details>
 
-<!-- Hero: assets/src/build-banner.py. Plates: assets/src/build-plates.py. Activity: assets/src/build-activity.py + .github/workflows/field-report.yml. Fonts: assets/src/build-fonts.sh. OG: assets/src/og.html. Live plate: docs/ (Pages: master /docs). No external assets. -->
+<!-- Hero: assets/src/build-banner.py. Plates: assets/src/build-plates.py. Icons: assets/src/build-icons.py + assets/src/icons.json. Activity: assets/src/build-activity.py + .github/workflows/field-report.yml. Fonts: assets/src/build-fonts.sh. OG: assets/src/og.html. Live plate: docs/ (Pages: master /docs). No external assets. -->

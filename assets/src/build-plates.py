@@ -11,9 +11,12 @@ The activity plate is built separately, from live data, by build-activity.py.
 
 from __future__ import annotations
 
+import json
+
 from fieldtype import DISPLAY, MONO, SANS, ROOT, text_path
 
 W = 1280
+ICONS = json.loads((ROOT / "assets" / "src" / "icons.json").read_text(encoding="utf-8"))
 
 THEMES = {
     "light": {
@@ -63,6 +66,17 @@ def wrap(text: str, size: float, max_width: float, *, font=SANS, tracking: float
     if current:
         lines.append(current)
     return lines
+
+
+def icon_markup(key: str, x: float, y: float, size: float, fill: str) -> str:
+    icon = ICONS[key]
+    width, height = icon["viewBox"]
+    scale = size / max(width, height)
+    paths = "".join(f'<path d="{d}"/>' for d in icon["paths"])
+    return (
+        f'<g transform="translate({x} {y}) scale({scale:.5f})" '
+        f'fill="{fill}" opacity="0.9">{paths}</g>'
+    )
 
 
 def shell(palette: dict, height: int, title: str, desc: str,
@@ -173,29 +187,63 @@ def work_plate(theme: str, palette: dict) -> str:
 
 
 def stack_plate(theme: str, palette: dict) -> str:
-    height = 520
+    height = 590
     ink = palette["ink"]
     muted = palette["muted"]
     soft = palette["soft"]
 
     groups = [
-        ("BACKEND", "Java 21  ·  Spring Boot  ·  Spring Security  ·  Spring Data JPA  ·  Go  ·  gRPC  ·  REST"),
-        ("FRONTEND", "TypeScript  ·  React  ·  Next.js  ·  Redux Toolkit  ·  Tailwind CSS"),
-        ("DATA", "PostgreSQL  ·  Redis  ·  MongoDB  ·  MinIO"),
-        ("INFRASTRUCTURE", "Docker  ·  Kubernetes  ·  Jenkins  ·  Nginx"),
-        ("SECURITY", "OWASP Top 10  ·  JWT / OAuth2  ·  Keycloak  ·  HashiCorp Vault"),
+        ("BACKEND", [
+            ("java", "Java 21"),
+            ("springboot", "Spring Boot"),
+            ("springsecurity", "Spring Security"),
+            ("springdata", "Spring Data JPA"),
+            ("go", "Go"),
+            ("grpc", "gRPC"),
+            ("rest", "REST"),
+        ]),
+        ("FRONTEND", [
+            ("typescript", "TypeScript"),
+            ("react", "React"),
+            ("nextjs", "Next.js"),
+            ("redux", "Redux Toolkit"),
+            ("tailwind", "Tailwind CSS"),
+            ("vue", "Vue"),
+        ]),
+        ("DATA", [
+            ("postgresql", "PostgreSQL"),
+            ("redis", "Redis"),
+            ("mongodb", "MongoDB"),
+            ("minio", "MinIO"),
+        ]),
+        ("INFRASTRUCTURE", [
+            ("docker", "Docker"),
+            ("kubernetes", "Kubernetes"),
+            ("jenkins", "Jenkins"),
+            ("nginx", "Nginx"),
+            ("caddy", "Caddy"),
+        ]),
+        ("SECURITY", [
+            ("owasp", "OWASP Top 10"),
+            ("jwt", "JWT / OAuth2"),
+            ("keycloak", "Keycloak"),
+            ("vault", "HashiCorp Vault"),
+        ]),
+        ("TESTING", [
+            ("playwright", "Playwright"),
+        ]),
     ]
 
     parts = shell(
         palette,
         height,
-        "Stack — backend, frontend, data, infrastructure, security",
-        "The current tools, grouped by layer.",
-        "STACK / 05 GROUPS",
+        "Stack — backend, frontend, data, infrastructure, security, testing",
+        "The current tools, grouped by layer, with monochrome marks.",
+        "STACK / 06 GROUPS",
         "CURRENT TOOLS / 2026",
     )
 
-    for index, (group, tech) in enumerate(groups):
+    for index, (group, items) in enumerate(groups):
         y = 150 + index * 70
         if index > 0:
             parts.append(
@@ -203,17 +251,20 @@ def stack_plate(theme: str, palette: dict) -> str:
             )
         parts.append(label(group, 10, 72, y, muted, tracking=1.8))
 
-        size = 18
-        if measure(tech, size, font=SANS, tracking=0.1) > 944:
-            size = 16.5
-        parts.append(label(tech, size, 240, y, ink, font=SANS, tracking=0.1))
+        cursor = 240.0
+        for key, name in items:
+            name_size = 18
+            name_width = measure(name, name_size, font=SANS, tracking=0.1)
+            parts.append(icon_markup(key, cursor, y - 16, 16, ink))
+            parts.append(label(name, name_size, cursor + 23, y, ink, font=SANS, tracking=0.1))
+            cursor += 23 + name_width + 18
 
     parts.append(
-        f'<line x1="72" y1="470" x2="1208" y2="470" stroke="{palette["rule"]}" stroke-width="1"/>'
+        f'<line x1="72" y1="540" x2="1208" y2="540" stroke="{palette["rule"]}" stroke-width="1"/>'
     )
-    parts.append(label("FULL TEXT VERSION BELOW", 8.5, 72, 492, muted, tracking=1.2))
+    parts.append(label("FULL TEXT VERSION BELOW", 8.5, 72, 562, muted, tracking=1.2))
     parts.append(
-        label("PANHAROTH06 / 05 GROUPS", 8.5, 1208, 492, muted, tracking=1.2, anchor="end")
+        label("PANHAROTH06 / 06 GROUPS", 8.5, 1208, 562, muted, tracking=1.2, anchor="end")
     )
     parts.append("</svg>")
     return "\n".join(parts)
